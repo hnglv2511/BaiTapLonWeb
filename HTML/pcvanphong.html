@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Văn Phòng</title>
+    <link rel="stylesheet" href="../CSS/PCshop.css">
+    <script src="../JS/PCshop.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="../HTML/Home.html"><img src="../PNG/logo.png" style="width: 150px; height: 150px;"></a>
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm sản phẩm">
+            <button>Tìm kiếm</button>
+        </div>
+        <div class="cart">
+            <div class="cart-icon">
+                <span class="cart-count">0</span>
+                <button onclick="toggleCart()"><img src="../PNG/bag.png" alt="Giỏ hàng" class="icon"> &nbsp;</button>
+            </div>
+            <div id="cart-dropdown" class="dropdown-content">
+            </div>
+        </div>
+        <div class="account">
+            <button onclick="showLoginForm()">Đăng Nhập</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <button onclick="toggleDropdown()" class="filter-button">Lọc giá</button>
+            <div id="dropdownMenu" class="dropdown-content">
+                <button onclick="filterProducts('under5')">Dưới 5triệu₫</button><br>
+                <button onclick="filterProducts('5to10')">5triệu₫ - 10triệu₫</button><br>
+                <button onclick="filterProducts('10to15')">10triệu₫ - 15triệu₫</button><br>
+                <button onclick="filterProducts('15to20')">15triệu₫ - 20triệu₫</button><br>
+                <button onclick="filterProducts('over20')">Trên 20triệu₫</button>
+            </div>
+        </nav><button></button>
+
+        <main>
+            <div class="product-item">
+                <a href="../HTML/pcgaming.html"><img src="https://file.hstatic.net/1000288298/collection/best-pc-cases_copy_dcd36f7314434aae9c41ebfe31662933.jpg" style="height: 500px; width: 1000px; "></a>
+            </div>
+            </br>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="../HTML/Product/PC_Vanphong/VP1.html"><img src="https://product.hstatic.net/1000288298/product/dsc02846_0d6f4ae107b34354b2da8882b21b1f71_master.jpg"></a>
+                    <div class="product-information">
+                        <div class="product-name">PC VP HOME OFFICE PENTIUM GOLD G6405 - RAM 8GB- SSD 256GB</div><br>
+                        <div class="product-price">
+                            5,880,000₫</div>
+                        <div class="sellof">-16%</div>
+                        <div class="old-price"><s>6,990,000₫
+                        </s></div><br>
+                        <div class="addtocart">
+                            <button onclick="toggleCart()"><img src="../PNG/bag.png" alt="Giỏ hàng" class="icon"> &nbsp;
+                            <div> THÊM VÀO GIỎ</div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="../HTML/Product/PC_Vanphong/VP2.html"><img src="https://product.hstatic.net/1000288298/product/pc-van-phong-ttgshop_b94239093fbd4478bfbfcd031dda8cdc_master.jpg"></a>
+                    <div class="product-information">
+                        <div class="product-name">PC VP HOME OFFICE Core i7 12700 - RAM 16GB- SSD 500GB- Màn hình 24 Inch</div><br>
+                        <div class="product-price">
+                            15,580,000₫</div>
+                        <div class="sellof">-11%</div>
+                        <div class="old-price"><s>17,490,000₫</s></div><br>
+                        <div class="addtocart">
+                            <button onclick="toggleCart()"><img src="../PNG/bag.png" alt="Giỏ hàng" class="icon"> &nbsp;
+                            <div> THÊM VÀO GIỎ</div>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product-item">
+                    <a href="../HTML/Product/PC_Vanphong/VP3.html"><img src="https://product.hstatic.net/1000288298/product/11398_dsc02858_5bfaf03e9b324728928a9736e90418ad_master.jpg"></a>
+                    <div class="product-information">
+                        <div class="product-name">PC VP HOME OFFICE Core i5 12400 - RAM 16GB- SSD 256GB- Màn hình 24 Inch</div>
+                        <div class="product-price">
+                            10,360,000₫</div>
+                        <div class="sellof">-14%</div>
+                        <div class="old-price"><s>
+                            11,990,000₫</s></div><br>
+                        <div class="addtocart">
+                            <button onclick="toggleCart()"><img src="../PNG/bag.png" alt="Giỏ hàng" class="icon"> &nbsp;
+                            <div> THÊM VÀO GIỎ</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="../HTML/Product/PC_Vanphong/VP4.html"><img src="https://product.hstatic.net/1000288298/product/dsc02846_b9a807842ec8403993a7e6884a6d9539_master.jpg"></a>
+                    <div class="product-information">
+                        <div class="product-name">PC VP HOME OFFICE Core i5 12400 - RAM 16GB- SSD 256GB</div><br>
+                        <div class="product-price">8,680,000₫</div>
+                        <div class="sellof">-13%</div>
+                        <div class="old-price"><s>9,990,000₫
+                        </s></div><br>
+                        <div class="addtocart">
+                            <button onclick="toggleCart()"><img src="../PNG/bag.png" alt="Giỏ hàng" class="icon"> &nbsp;
+                                <div> THÊM VÀO GIỎ</div>
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Form đăng ký riêng -->
+    <div id="Login-popup" class="Login-popup">
+        <div class="Login-form">
+            <h2>ĐĂNG NHẬP TÀI KHOẢN</h2>
+            <form>
+                <input type="text" placeholder="Tên đăng nhập">
+                <input type="password" placeholder="Mật khẩu">
+                <button type="submit">Đăng Nhập</button>
+                <button class="close-btn" onclick="closeLoginForm()">Đóng</button>
+            </form>
+
+        </div>
+    </div>
+    <footer>
+        <div class="newsletter">
+            <h2>Đăng ký nhận bản tin</h2>
+            <p>Để nhận các thông tin mới từ Hwng PCshop cũng như các chương trình khuyến mãi</p>
+            <div class="newsletter-input">
+                <input type="email" placeholder="Vui lòng nhập email của bạn...">
+                <button>Đăng ký</button>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Về Hwng PCshop</h3>
+                <p>Trang thương mại chính thức của Hwng PCshop, chuyên cung cấp PC dành cho mọi đối tượng</p>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>Thông tin liên hệ</h3>
+                <p>&#9906; &nbsp;&nbsp;Cửa hàng: 12 Nguyễn Văn Bảo, Phường 4, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gò Vấp, Hồ Chí Minh</p>
+                <p>&#9742; 0981017109 - Mr.Hưng</p>
+                <p>&#9993; hwngpcshop@gmail.com</p>
+            </div>
+
+            <div class="footer-section bank">
+                <h3>Tài Khoản Ngân Hàng</h3>
+                <ul>
+                    <li><a href="#">Tài Khoản Ngân Hàng</a></li>
+                    <li><a href="#">Tìm kiếm</a></li>
+                    <li><a href="#">Phương thức thanh toán</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section policies">
+                <h3>Chính sách</h3>
+                <ul>
+                    <li><a href="#">Chính Sách Bảo Mật</a></li>
+                    <li><a href="#">Quy Định Bảo Hành</a></li>
+                    <li><a href="#">Chính Sách Đổi Trả</a></li>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="#">Chính sách vận chuyển & kiểm hàng</a></li>
+                    <li><a href="#">Phân định trách nhiệm của tổ chức cung ứng dịch vụ logistics</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2024 Bản quyền của Hwng PCshop. Trụ sở: 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Hồ Chí Minh.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

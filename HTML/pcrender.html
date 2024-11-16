@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Render</title>
+    <link rel="stylesheet" href="../CSS/PCshop.css">
+    <script src="../JS/PCshop.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <a href="../HTML/Home.html"><img src="../PNG/logo.png" style="width: 150px; height: 150px;"></a>
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm sản phẩm">
+            <button>Tìm kiếm</button>
+        </div>
+        <div class="cart">
+            <div class="cart-icon">
+                <span class="cart-count">0</span>
+                <button onclick="toggleCart()"><img src="../PNG/bag.png" alt="Giỏ hàng" class="icon"> &nbsp;</button>
+            </div>
+            <div id="cart-dropdown" class="dropdown-content">
+            </div>
+        </div>
+        <div class="account">
+            <button onclick="showLoginForm()">Đăng Nhập</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <button onclick="toggleDropdown()" class="filter-button">Lọc giá</button>
+            <div id="dropdownMenu" class="dropdown-content">
+                <button onclick="filterProducts('under5')">Dưới 5triệu₫</button><br>
+                <button onclick="filterProducts('5to10')">5triệu₫ - 10triệu₫</button><br>
+                <button onclick="filterProducts('10to15')">10triệu₫ - 15triệu₫</button><br>
+                <button onclick="filterProducts('15to20')">15triệu₫ - 20triệu₫</button><br>
+                <button onclick="filterProducts('over20')">Trên 20triệu₫</button>
+            </div>
+        </nav><button></button>
+
+        <main>
+            <div class="product-item">
+                <a href="../HTML/pcgaming.html"><img src="https://file.hstatic.net/1000288298/collection/best-pc-cases_copy_dcd36f7314434aae9c41ebfe31662933.jpg" style="height: 500px; width: 1000px; "></a>
+            </div>
+            </br>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="../HTML/Product/PC_Render/Render1.html"><img src="https://product.hstatic.net/1000288298/product/dsc07134_0ed28509e13347a882ba137ef2a1d982_master.jpg"></a>
+                    <div class="product-information">
+                        <div class="product-name">PC Đồ Họa 2D i5 12400F - GTX 1650 4GB ( ALL NEW - Bảo hành 36 Tháng)</div><br>
+                        <div class="product-price">
+                            10,980,000₫</div>
+                        <div class="sellof">-22%</div>
+                        <div class="old-price"><s>13,999,000₫
+                        </s></div><br>
+                        <div class="addtocart">
+                            <button onclick="toggleCart()"><img src="../PNG/bag.png" alt="Giỏ hàng" class="icon"> &nbsp;
+                            <div> THÊM VÀO GIỎ</div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="../HTML/Product/PC_Render/Render2.html"><img src="https://product.hstatic.net/1000288298/product/dsc07158_37bf4bad638d43cab2c84f7182a75a75_master.jpg"></a>
+                    <div class="product-information">
+                        <div class="product-name">PC Đồ Họa Hiệu Suất Cao i5 13500 - RTX 3050 6GB OC</div><br>
+                        <div class="product-price">16.680.000₫</div>
+                        <div class="sellof">-16%</div>
+                        <div class="old-price"><s>19.890.000₫</s></div><br>
+                        <div class="addtocart">
+                            <button onclick="toggleCart()"><img src="../PNG/bag.png" alt="Giỏ hàng" class="icon"> &nbsp;
+                            <div> THÊM VÀO GIỎ</div>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product-item">
+                    <a href="../HTML/Product/PC_Render/Render3.html"><img src="https://product.hstatic.net/1000288298/product/dsc01183_d1c7f10888754eacb2f33698b7dd3b36_master.jpg"></a>
+                    <div class="product-information">
+                        <div class="product-name">PC Workstation 2D 3D- Edit Video i5 14600K - 16GB DDR5 - GTX 1660 Super 6GB OC</div>
+                        <div class="product-price">20,980,000₫</div>
+                        <div class="sellof">-19%</div>
+                        <div class="old-price"><s>
+                            25,990,000₫</s></div><br>
+                        <div class="addtocart">
+                            <button onclick="toggleCart()"><img src="../PNG/bag.png" alt="Giỏ hàng" class="icon"> &nbsp;
+                            <div> THÊM VÀO GIỎ</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="../HTML/Product/PC_Render/Render4.html"><img src="https://product.hstatic.net/1000288298/product/dsc01394_01f534900f534293a98e22424edf3aa5_master.jpg"></a>
+                    <div class="product-information">
+                        <div class="product-name">PC Workstation 2D 3D- Edit Video i9 12900K- RTX 4060 Ti 16GB OC ( ALL NEW - Bảo hành 36 tháng)</div><br>
+                        <div class="product-price">30,680,000₫</div>
+                        <div class="sellof">-15%</div>
+                        <div class="old-price"><s>35,990,000₫</s></div><br>
+                        <div class="addtocart">
+                            <button onclick="toggleCart()"><img src="../PNG/bag.png" alt="Giỏ hàng" class="icon"> &nbsp;
+                                <div> THÊM VÀO GIỎ</div>
+                                </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a href="../HTML/Product/PC_Render/Render5.html"><img src="https://product.hstatic.net/1000288298/product/dsc07642_32714c42843644b4b8d7bf1a2c8e7c0e_master.jpg"></a>
+                    <div class="product-information">
+                        <div class="product-name">PC WORKSTATION - GAMING PROFESSIONAL i9 13900K- RTX 4080 SUPER 16GB OC</div><br>
+                        <div class="product-price">58,860,000₫
+                        </div>
+                        <div class="sellof">-08%</div>
+                        <div class="old-price"><s>
+                            63,999,000₫</s></div><br>
+                        <div class="addtocart">
+                            <button onclick="toggleCart()"><img src="../PNG/bag.png" alt="Giỏ hàng" class="icon"> &nbsp;
+                                <div> THÊM VÀO GIỎ</div>
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Form đăng ký riêng -->
+    <div id="Login-popup" class="Login-popup">
+        <div class="Login-form">
+            <h2>ĐĂNG NHẬP TÀI KHOẢN</h2>
+            <form>
+                <input type="text" placeholder="Tên đăng nhập">
+                <input type="password" placeholder="Mật khẩu">
+                <button type="submit">Đăng Nhập</button>
+                <button class="close-btn" onclick="closeLoginForm()">Đóng</button>
+            </form>
+
+        </div>
+    </div>
+    <footer>
+        <div class="newsletter">
+            <h2>Đăng ký nhận bản tin</h2>
+            <p>Để nhận các thông tin mới từ Hwng PCshop cũng như các chương trình khuyến mãi</p>
+            <div class="newsletter-input">
+                <input type="email" placeholder="Vui lòng nhập email của bạn...">
+                <button>Đăng ký</button>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Về Hwng PCshop</h3>
+                <p>Trang thương mại chính thức của Hwng PCshop, chuyên cung cấp PC dành cho mọi đối tượng</p>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>Thông tin liên hệ</h3>
+                <p>&#9906; &nbsp;&nbsp;Cửa hàng: 12 Nguyễn Văn Bảo, Phường 4, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gò Vấp, Hồ Chí Minh</p>
+                <p>&#9742; 0981017109 - Mr.Hưng</p>
+                <p>&#9993; hwngpcshop@gmail.com</p>
+            </div>
+
+            <div class="footer-section bank">
+                <h3>Tài Khoản Ngân Hàng</h3>
+                <ul>
+                    <li><a href="#">Tài Khoản Ngân Hàng</a></li>
+                    <li><a href="#">Tìm kiếm</a></li>
+                    <li><a href="#">Phương thức thanh toán</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section policies">
+                <h3>Chính sách</h3>
+                <ul>
+                    <li><a href="#">Chính Sách Bảo Mật</a></li>
+                    <li><a href="#">Quy Định Bảo Hành</a></li>
+                    <li><a href="#">Chính Sách Đổi Trả</a></li>
+                    <li><a href="#">Điều khoản sử dụng</a></li>
+                    <li><a href="#">Chính sách vận chuyển & kiểm hàng</a></li>
+                    <li><a href="#">Phân định trách nhiệm của tổ chức cung ứng dịch vụ logistics</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright © 2024 Bản quyền của Hwng PCshop. Trụ sở: 12 Nguyễn Văn Bảo, Phường 4, Gò Vấp, Hồ Chí Minh.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
